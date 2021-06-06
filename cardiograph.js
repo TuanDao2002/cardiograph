@@ -73,7 +73,7 @@ new Chart("myChart", {
            var chartHeight = context.chart.height;
            var chartWidth = context.chart.width;
            context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; //fontSize: 3% of canvas height
-           context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.5 / 100;
+           context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.25 / 100;
            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 1.5 / 100;
         }
