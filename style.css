@@ -9,10 +9,25 @@ html {
 #measure {
     width: 100%;
     text-align: center;
+    font-size: 2vw;
 }
 
-#myChart {
-    width: 800px;
+#cardiograph {
+    width: 70vw !important;
     /* min-width: 600px; */
-    /* height: 400px; */
+    height: 35vw !important;
 }
+
+@media only screen and (max-width: 600px) {
+    #myChart {
+        /* width: 70vw !important;
+        height: 35vw !important; */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* #myChart {
+        width: 400px !important;
+        height: 200px !important;
+    } */
+} 

@@ -22,7 +22,7 @@ new Chart("myChart", {
         title: {
             display: true,
             position: 'bottom',
-            fontSize: 35,
+            // fontSize: 35,
             fontColor: "rgba(255,0,0)",
             text: "Cardiograph",
         },
@@ -41,12 +41,12 @@ new Chart("myChart", {
             xAxes: [
                 {
                     ticks: {
-                        fontSize: 15,
+                        // fontSize: 15,
                     },
                     scaleLabel: {
                         display: true,
                         labelString: 'Date',
-                        fontSize: 20,
+                        // fontSize: 15,
                     },
                 }
             ],
@@ -56,16 +56,26 @@ new Chart("myChart", {
                         min: 70,
                         stepSize: 5, 
                         max: 100,
-                        fontSize: 15,
+                        // fontSize: 15,
                     },
 
                     scaleLabel: {
                         display: true,
                         labelString: 'beats per minute',
-                        fontSize: 20,
+                        // fontSize: 15,
                     },
                 }
             ],
         }
-    }
+    },
+    plugins: [{
+        beforeDraw: function(context) {
+           var chartHeight = context.chart.height;
+           var chartWidth = context.chart.width;
+           context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; //fontSize: 3% of canvas height
+           context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.5 / 100;
+           context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
+           context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 1.5 / 100;
+        }
+    }]
 });
