@@ -18,16 +18,54 @@ html {
     height: 35vw !important;
 }
 
-@media only screen and (max-width: 600px) {
-    #myChart {
-        /* width: 70vw !important;
-        height: 35vw !important; */
+/* @media only screen and (max-width: 300px) {
+    #measure {
+        font-size: 4vw !important;
+    }
+
+    #cardiograph {
+        height: 1000vw !important;
     }
 }
 
+@media only screen and (max-width: 400px) {
+    #measure {
+        font-size: 4vw !important;
+    }
+
+    #cardiograph {
+        height: 150vw !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #measure {
+        font-size: 4vw !important;
+    }
+
+    #cardiograph {
+        height: 125vw !important;
+    }
+}  */
+
 @media only screen and (max-width: 800px) {
-    /* #myChart {
-        width: 400px !important;
-        height: 200px !important;
-    } */
+    #measure {
+        font-size: 6vw !important;
+    }
+
+    #cardiograph {
+        width: 85vw !important;
+        height: 100vw !important;
+    }
 } 
+
+@media only screen and (max-width: 600px) {
+    #measure {
+        font-size: 6vw !important;
+    }
+
+    #cardiograph {
+        height: 130vw !important;
+    }
+} 
+
