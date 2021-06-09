@@ -3,22 +3,25 @@
 import { Line } from 'react-chartjs-2';
 import React from 'react';
 
+const data = require('./data.json');
+
 const App = () => {
   const state = {
-    labels: [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ],
+    // labels: [
+    //   'January',
+    //   'February',
+    //   'March',
+    //   'April',
+    //   'May',
+    //   'Jun',
+    //   'Jul',
+    //   'Aug',
+    //   'Sep',
+    //   'Oct',
+    //   'Nov',
+    //   'Dec',
+    // ],
+    
     datasets: [
       {
         label: 'BPM Monthly',
