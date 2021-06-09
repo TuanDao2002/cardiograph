@@ -76,11 +76,7 @@ new Chart("myChart", {
            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.25 / 100;
            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 1.5 / 100;
-<<<<<<< HEAD
-            } else if (chartWidth>320 && chartWidth <= 767) {
-=======
            } else if (chartWidth <= 500) {
->>>>>>> 588a52b9c40d588d11031097079437a51185c122
             context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; 
             context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 3.5 / 100;
             context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 4 / 100;
