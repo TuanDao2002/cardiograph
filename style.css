@@ -8,20 +8,6 @@ html {
 
 
 
-@media (min-width: 1281px) {
-    #measure {
-    width: 100%;
-    text-align: center;
-    font-size: 2vw;
-    }
-
-    #cardiograph {
-    width: 40vw !important;
-    /* min-width: 600px;  */
-    height: 35vw !important;
-    }
-}
-
 
 /* @media only screen and (max-width: 300px) {
     #measure {
@@ -53,18 +39,21 @@ html {
     }
 }  */
 
-@media screen and (min-width: 1336px){
+/* @media screen and (min-width: 1336px){
     #measure {
         font-size: 6vw !important;
     }
 
     #cardiograph {
-        width: 55vw !important ;  
-        height: 80vw !important;
+        width: 50vw !important ;  
+        height: 60vw !important;
     }
-} 
+}  */
 
-@media screen and (min-width: 320px) {
+
+
+/* Moto G4 to Iphone X */
+@media screen and (min-width: 320px) and (max-width: 767px){
     #measure {
         font-size: 6vw !important;
         text-align: center;
@@ -74,12 +63,13 @@ html {
         height: 47vh !important;
 
     }
-} 
+}
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+ /* Ipad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     #cardiograph {
         height: 70vw !important;
-        width: 45vw !important;
+        width: 40vw !important;
         margin-right: 30px !important;
     }
     #measure {
@@ -88,11 +78,12 @@ html {
     }
 }
 
-@media screen and (min-width: 1024px) {
+/* Ipad pro */
+@media (min-width: 1024px) and (max-width: 1280px) {
     #cardiograph {
         height: 65vw !important;
-        width: 30vw !important;
-        margin-left: 40px !important;
+        width: 33vw !important;
+        /* margin-left: 10px !important; */
     }
     #measure {
         
@@ -100,6 +91,22 @@ html {
     }
 }
 
+/* desktop */
+@media (min-width: 1281px) {
+    #measure {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    }
+
+    #cardiograph {
+    width: 40vw !important;
+    /* min-width: 600px;  */
+    height: 35vw !important;
+    }
+}
+
+/* Galaxy Fold */
 @media screen and (max-width:320px) {
     #cardiograph {
         height: 120vw !important;

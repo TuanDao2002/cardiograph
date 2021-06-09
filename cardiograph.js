@@ -76,11 +76,7 @@ new Chart("myChart", {
            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.25 / 100;
            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 1.5 / 100;
-<<<<<<< HEAD
-           if (chartWidth <= 500) {
-=======
-            } else if (chartWidth>320 && chartWidth <= 767) {
->>>>>>> e29758342fafa02d389327316e817b9d2f9230c5
+           } else if (chartWidth <= 500) {
             context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; 
             context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 3.5 / 100;
             context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 4 / 100;
@@ -97,5 +93,5 @@ new Chart("myChart", {
             context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 2 / 100;
            }  
         }
-    }]
+    }],
 });
