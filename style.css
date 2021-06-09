@@ -6,17 +6,22 @@ html {
     align-items: center;
 }
 
-#measure {
+
+
+@media (min-width: 1281px) {
+    #measure {
     width: 100%;
     text-align: center;
     font-size: 2vw;
+    }
+
+    #cardiograph {
+    width: 40vw !important;
+    /* min-width: 600px;  */
+    height: 35vw !important;
+    }
 }
 
-#cardiograph {
-    width: 70vw !important;
-    /* min-width: 600px; */
-    height: 35vw !important;
-}
 
 /* @media only screen and (max-width: 300px) {
     #measure {
@@ -48,24 +53,60 @@ html {
     }
 }  */
 
-@media only screen and (max-width: 800px) {
+@media screen and (min-width: 1336px){
     #measure {
         font-size: 6vw !important;
     }
 
     #cardiograph {
-        width: 85vw !important;
-        height: 100vw !important;
+        width: 55vw !important ;  
+        height: 80vw !important;
     }
 } 
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 320px) {
     #measure {
         font-size: 6vw !important;
+        text-align: center;
     }
 
     #cardiograph {
-        height: 130vw !important;
+        height: 47vh !important;
+
     }
 } 
 
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    #cardiograph {
+        height: 70vw !important;
+        width: 45vw !important;
+        margin-right: 30px !important;
+    }
+    #measure {
+        
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #cardiograph {
+        height: 65vw !important;
+        width: 30vw !important;
+        margin-left: 40px !important;
+    }
+    #measure {
+        
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #cardiograph {
+        height: 120vw !important;
+        width: 70vw !important;
+    }
+    #measure {
+        font-size: 5vw !important;
+        text-align: center;
+    }
+}

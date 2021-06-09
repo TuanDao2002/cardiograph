@@ -71,21 +71,27 @@ new Chart("myChart", {
         beforeDraw: function(context) {
            var chartHeight = context.chart.height;
            var chartWidth = context.chart.width;
+           if (chartWidth >= 1366){
            context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; 
            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 1.25 / 100;
            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 1.5 / 100;
-           if (chartWidth <= 600) {
+            } else if (chartWidth>320 && chartWidth <= 767) {
             context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2.5 / 100; 
             context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 3.5 / 100;
-            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 4.5 / 100;
-            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 7 / 100;
-           } else if (chartWidth <= 800) {
-            context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 3 / 100; 
-            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 3.5 / 100;
-            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 4.5 / 100;
-            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 7 / 100;
-           }
+            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 4 / 100;
+            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 5.5 / 100;
+            } else if (chartWidth > 767 && chartWidth <= 1024) {
+            context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 2 / 100; 
+            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 2.5 / 100;
+            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 3 / 100;
+            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 2.5 / 100;
+           } else if (chartWidth > 1024 && chartWidth <= 1366) {
+            context.scales['y-axis-0'].options.ticks.fontSize = chartHeight * 1.25/ 100; 
+            context.scales['y-axis-0'].options.scaleLabel.fontSize = chartHeight * 3 / 100;
+            context.scales['x-axis-0'].options.ticks.fontSize = chartWidth * 2.5 / 100;
+            context.scales['x-axis-0'].options.scaleLabel.fontSize = chartWidth * 2 / 100;
+           }  
         }
     }]
 });
