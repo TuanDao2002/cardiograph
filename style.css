@@ -117,3 +117,71 @@ html {
         text-align: center;
     }
 }
+
+/* Moto G4, Galaxy S5 */
+@media screen and (min-width: 500px) and (max-width: 1023px) and (orientation: landscape){
+    #measure {
+        font-size: 3vw !important;
+        text-align: center;
+    }
+
+    #cardiograph {
+        height: 70vh !important;
+        width: 90vw !important;
+        margin-right: 35px !important;
+    }
+}
+
+
+ /* Ipad */
+@media screen and (min-width: 1024px) and (max-width:1365px) and (orientation: landscape) {
+    #cardiograph {
+        height: 80vh !important;
+        width: 60vw !important;
+        
+    }
+    #measure {
+        
+        text-align: center;
+    }
+}
+
+/* Ipad pro */
+@media (min-width: 1366px) and (max-width: 1439px) and (orientation: landscape) {
+    #cardiograph {
+        height: 70vh !important;
+        width: 55vw !important;
+        /* margin-left: 10px !important; */
+    }
+    #measure {
+        
+        text-align: center;
+    }
+}
+
+/* desktop */
+@media (min-width: 1440px) and (orientation: landscape){
+    #measure {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    }
+
+    #cardiograph {
+    width: 40vw !important;
+    /* min-width: 600px;  
+    height: 35vw !important;*/
+    }
+}
+
+/* Galaxy Fold
+@media screen and (max-width:320px) {
+    #cardiograph {
+        height: 120vw !important;
+        width: 70vw !important;
+    }
+    #measure {
+        font-size: 5vw !important;
+        text-align: center;
+    }
+}*/
